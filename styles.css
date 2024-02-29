@@ -1182,7 +1182,9 @@ div .WhatsApp img {
 .slide1234:hover .text1234 {
   color: #fff;
 }
-
+.btn-change {
+  padding-left: 10px;
+}
 .slide1234:hover::before {
   transform: translate(-110%, 0) skew(-30deg);
 }
@@ -1241,6 +1243,11 @@ div .WhatsApp img {
 }
 
 @media (max-width: 1020px) {
+  .btn-change {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
   .about-title {
     text-align: center;
   }
