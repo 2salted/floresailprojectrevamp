@@ -25,7 +25,7 @@ body {
   display: none;
 }
 #heroImage {
-  background-image: url(mainimage.JPG);
+  background-image: url(compressedFloreSailImages/mainimage\ \(2\).jpg);
   height: 100svh;
   width: 100vw;
   background-position: 0px 0px;
@@ -42,7 +42,7 @@ body {
   background-size: cover;
 }
 #heroImage3 {
-  background-image: url(images/IMG_4735.JPG);
+  background-image: url(compressedFloreSailImages/IMG_4748\ \(1\).jpg);
   height: 100vh;
   width: 100vw;
   background-position: bottom center;
@@ -222,7 +222,7 @@ body {
 .about-container {
   padding-top: 160px;
   padding-bottom: 160px;
-  background-image: url(about-section.jpg);
+  background-image: url(compressedFloreSailImages/about-section\ \(1\).jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 50% 50%;
@@ -809,7 +809,7 @@ body.modal-open {
 }
 
 .card-top {
-  background-image: url(pictest.jpg);
+  background-image: url(compressedFloreSailImages/pictest\ \(1\).jpg);
   filter: brightness(108%);
   position: relative;
   background-position: right center; /* Center the background image horizontally and vertically */
@@ -1467,7 +1467,7 @@ div .WhatsApp img {
   }
 
   #heroImage {
-    background-image: url(IMG_4748.JPG);
+    background-image: url(compressedFloreSailImages/IMG_4748\ \(1\).jpg);
     height: 100svh;
     width: 100vw;
     background-position: center center;
