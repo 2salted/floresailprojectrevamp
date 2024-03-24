@@ -475,11 +475,12 @@
                     </div>
                     <div class="btn-container">
                       <div class="slide-container">
-                        <a href="booking.html">
-                          <button class="cb-btn slide123">
-                            <span class="text123">Book A Trip</span>
-                          </button>
-                        </a>
+                        <button
+                          class="cb-btn slide123"
+                          onclick="submissionModal()"
+                        >
+                          <span class="text123">Book A Trip</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -597,7 +598,9 @@
       <div id="caption"></div>
     </div>
 
-    <div id="submissionModal">test</div>
+    <div id="submissionModal">
+      <div id="subModalContent"></div>
+    </div>
 
     <script src="script.js"></script>
     <script>
@@ -607,7 +610,6 @@
         let yearText = document.getElementById("allRightsReserved");
         yearText.innerHTML += currentYear;
       }
-
       window.onload = getTheYear();
     </script>
   </body>

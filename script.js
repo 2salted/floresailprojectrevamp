@@ -4,14 +4,13 @@ var image3 = document.getElementById("heroImage3");
 var bigtxt = document.getElementById("bigtxt");
 var currentImage = 1;
 
-
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener("DOMContentLoaded", function () {
   // Find the .text-container element
-  const textContainer = document.querySelector('.text-container');
-  
+  const textContainer = document.querySelector(".text-container");
+
   // After 2 seconds, remove the 'hidden' class to make it visible
-  setTimeout(function() {
-      textContainer.classList.remove('hidden');
+  setTimeout(function () {
+    textContainer.classList.remove("hidden");
   }, 1000); // 1000 milliseconds = 1 second
 });
 
@@ -39,111 +38,112 @@ setInterval(toggleImages, 10000); // Switch images every 10 seconds
 */
 
 function myFunction(x) {
-    x.classList.toggle("change");
+  x.classList.toggle("change");
 
-    // Toggle the mobile menu
-    var mobileMenu = document.querySelector('.mobile-menu');
-    if (mobileMenu.style.right === "" || mobileMenu.style.right === "-300px") {
-        mobileMenu.style.right = "0";
-    } else {
-        mobileMenu.style.right = "-300px";
-    }
+  // Toggle the mobile menu
+  var mobileMenu = document.querySelector(".mobile-menu");
+  if (mobileMenu.style.right === "" || mobileMenu.style.right === "-300px") {
+    mobileMenu.style.right = "0";
+  } else {
+    mobileMenu.style.right = "-300px";
+  }
 }
 
-
 function closeMobileMenu() {
-    var mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenu.style.right = '-300px';
+  var mobileMenu = document.querySelector(".mobile-menu");
+  mobileMenu.style.right = "-300px";
 
-    // Restore the burger menu icon
-    var burgerIcon = document.querySelector('.x-container');
-    if (burgerIcon.classList.contains("change")) {
-        burgerIcon.classList.remove("change");
-    }
+  // Restore the burger menu icon
+  var burgerIcon = document.querySelector(".x-container");
+  if (burgerIcon.classList.contains("change")) {
+    burgerIcon.classList.remove("change");
+  }
 }
 
 // Add this code to close the mobile menu when a menu item is clicked
-var mobileMenuItems = document.querySelectorAll('.mobile-menu a');
+var mobileMenuItems = document.querySelectorAll(".mobile-menu a");
 mobileMenuItems.forEach(function (item) {
-    item.addEventListener('click', closeMobileMenu);
+  item.addEventListener("click", closeMobileMenu);
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.querySelector(".text-container").style.color = "#0d3b54";
-        
-        document.querySelectorAll("#smalltxt, #bigtxt, #undertxt").forEach(function (element, index) {
-            setTimeout(function () {
-                element.style.opacity = "1";
-                element.style.transform = "translateX(0)";
-            }, index * 200);
-        });
+  setTimeout(function () {
+    document.querySelector(".text-container").style.color = "#0d3b54";
 
+    document
+      .querySelectorAll("#smalltxt, #bigtxt, #undertxt")
+      .forEach(function (element, index) {
         setTimeout(function () {
-            document.querySelector("#button").style.opacity = "1";
-            document.querySelector("#button").style.transform = "translateY(0)";
-        }, 1000);
-    }, 3500);
+          element.style.opacity = "1";
+          element.style.transform = "translateX(0)";
+        }, index * 200);
+      });
+
+    setTimeout(function () {
+      document.querySelector("#button").style.opacity = "1";
+      document.querySelector("#button").style.transform = "translateY(0)";
+    }, 1000);
+  }, 3500);
 });
 
 // Function to open the modal
 function openModal() {
-    var modal = document.getElementById('videoModal');
-    modal.style.display = 'block';
-  
-    // Add 'modal-open' class to the body
-    document.body.classList.add('modal-open');
-  
-    // Event listener for clicking the close button
-    document.getElementById('closeModal').addEventListener('click', function() {
-      closeModal();
-    });
-  
-    // Event listener for closing the modal when clicking outside the modal
-    window.addEventListener('click', function(event) {
-      if (event.target === modal) {
-        closeModal();
-      }
-    });
-  }
-  
-  // Function to close the modal
-  function closeModal() {
-    var modal = document.getElementById('videoModal');
-    modal.style.display = 'none';
-  
-    // Remove 'modal-open' class from the body
-    document.body.classList.remove('modal-open');
-  }
-  
-  // Event listener for clicking on .about-container-2
-  document.querySelector('.about-container-2').addEventListener('click', openModal);
-  
-  // JavaScript code
-function smoothScroll(targetId) {
-    const targetElement = document.getElementById(targetId);
-  
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 60, // Adjust the offset as needed
-        behavior: 'smooth',
-      });
-    }
-  }
+  var modal = document.getElementById("videoModal");
+  modal.style.display = "block";
 
-  
-  let slideIndex = 1;
+  // Add 'modal-open' class to the body
+  document.body.classList.add("modal-open");
+
+  // Event listener for clicking the close button
+  document.getElementById("closeModal").addEventListener("click", function () {
+    closeModal();
+  });
+
+  // Event listener for closing the modal when clicking outside the modal
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+}
+
+// Function to close the modal
+function closeModal() {
+  var modal = document.getElementById("videoModal");
+  modal.style.display = "none";
+
+  // Remove 'modal-open' class from the body
+  document.body.classList.remove("modal-open");
+}
+
+// Event listener for clicking on .about-container-2
+document
+  .querySelector(".about-container-2")
+  .addEventListener("click", openModal);
+
+// JavaScript code
+function smoothScroll(targetId) {
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    window.scrollTo({
+      top: targetElement.offsetTop - 60, // Adjust the offset as needed
+      behavior: "smooth",
+    });
+  }
+}
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
@@ -151,18 +151,21 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
-
 
 var modal123 = document.getElementById("myModal");
 var img = document.getElementById("myImg");
@@ -182,7 +185,7 @@ img2.onclick = function () {
   modal123.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-}
+};
 
 // Close the modal when the close button is clicked
 span123.onclick = function () {
@@ -195,3 +198,10 @@ window.onclick = function (event) {
     modal123.style.display = "none";
   }
 };
+
+let formModal = document.getElementById("submissionModal");
+formModal.style.display = "none";
+
+function submissionModal() {
+  formModal.style.display = "flex";
+}
