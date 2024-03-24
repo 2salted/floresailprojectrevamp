@@ -18,6 +18,12 @@ body {
   overflow-x: hidden;
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
+
+#submissionModal {
+  max-width: 75%;
+  background-color: black;
+}
+
 .header-container {
   height: 100svh;
 }

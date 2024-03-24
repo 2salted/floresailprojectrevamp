@@ -492,7 +492,6 @@
     </div>
     <div class="section-footer">
       <div class="section-row">
-        <div class="footer-row-item"></div>
         <div class="footer-row-item">
           <h3 class="row-item-h">Useful Links</h3>
           <ul class="row-item-ul">
@@ -535,6 +534,7 @@
             </li>
           </ul>
         </div>
+        <div class="footer-row-item"></div>
         <div class="footer-row-item">
           <div class="contact-form">
             <h2>Contact Us</h2>
@@ -546,6 +546,7 @@
                   name="email"
                   required
                   placeholder="Enter Email"
+                  style="color: white"
                 />
               </div>
               <div class="form-group">
@@ -554,6 +555,7 @@
                   name="message"
                   required
                   placeholder="Ask us questions"
+                  style="color: white"
                 ></textarea>
               </div>
               <div class="form-group">
@@ -595,7 +597,7 @@
       <div id="caption"></div>
     </div>
 
-    <div id=""></div>
+    <div id="submissionModal">test</div>
 
     <script src="script.js"></script>
     <script>
@@ -606,7 +608,7 @@
         yearText.innerHTML += currentYear;
       }
 
-      window.onload = getTheYear;
+      window.onload = getTheYear();
     </script>
   </body>
 </html>
