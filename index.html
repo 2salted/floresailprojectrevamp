@@ -1,410 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6078e52a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="compressedFloreSailImages/logo2 (1).png"
+      sizes="32x32"
+    />
+    <title>Floresail main page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/6078e52a17.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="compressedFloreSailImages/logo2 (1).png" sizes="32x32">
-  <title>Floresail main page</title>
-</head>
+  <body>
+    <div class="sticky">
+      <a
+        class="WhatsApp"
+        aria-label="Chat on WhatsApp"
+        href="https://api.whatsapp.com/send?phone=351927916990&text=I%20am%20in%20the%20Floresail%20website%20and%20I%20have%20a%20couple%20inquiries."
+      >
+        <img
+          alt="Chat on WhatsApp"
+          src="compressedFloreSailImages/WhatsApps (1).png"
+      /></a>
+    </div>
+    <div class="header-container">
+      <nav id="topbar">
+        <div class="nav-container">
+          <a href="index.html"
+            ><img
+              src="compressedFloreSailImages/logo2 (1).png"
+              alt="Floresail Logo"
+              class="logo"
+          /></a>
+          <div class="mobile-menu">
+            <ul class="nav-menu">
+              <li>
+                <a href="javascript:void(0);" onclick="smoothScroll('scroll-1')"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0);" onclick="smoothScroll('scroll-2')"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0);" onclick="smoothScroll('scroll-3')"
+                  >Price</a
+                >
+              </li>
+              <li><a href="javascript:void(0);">Services</a></li>
+              <li><a href="javascript:void(0);">Testimonials</a></li>
+              <li>
+                <a href="javascript:void(0);" onclick="smoothScroll('scroll-6')"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="tel:+351927916990"
+                  ><span id="spanNum">+351 </span>927 916 990</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="x-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-text-container text-container centered hidden">
+        <p id="smalltxt">WIND, WATER, LIFESTYLE.</p>
+        <h1 id="bigtxt" class="white-text">floresail</h1>
+        <p id="undertxt">Azores, Flores</p>
+        <a href="#pricing1">
+          <div class="yellow-button" id="button">Book A Trip</div>
+        </a>
+      </div>
+      <div id="heroImage" class="fade"></div>
+      <div id="heroImage2" class="fade hidden"></div>
+      <div id="heroImage3" class="fade hidden"></div>
+    </div>
+    <div id="scroll-1" class="about-container">
+      <div class="about-row-container">
+        <div class="about-row">
+          <div class="about-container-1">
+            <p id="about-title" class="about-title">about us</p>
+            <h3 class="wwo">What We Offer</h3>
+            <p class="wwop">
+              We want you to have an awesome <br />
+              and unique sailing experience.
+            </p>
+            <div class="txt-div">
+              <p class="txt-div-p">
+                Explore the breathtaking Western Group of the Azores with our
+                captivating sailing tours! Immerse yourself in the islands'
+                natural beauty and connect with marine life while contributing
+                to environmental preservation.
+              </p>
+              <p>
+                Join us in our mission to protect the environment while
+                indulging in the unmatched beauty of the Azores on a sailing
+                tour you'll cherish forever.
+              </p>
+            </div>
+            <div class="btn-wrap">
+              <div class="slide-container btn-change">
+                <a href="booking.html">
+                  <button class="book-btn slide123">
+                    <span class="text123">Book A Trip</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-container-2">
+            <div class="imgcontainer">
+              <a
+                ><img
+                  class="play-button"
+                  src="compressedFloreSailImages/play (1).png"
+              /></a>
+              <a
+                ><img
+                  class="imgvid"
+                  src="compressedFloreSailImages/vidimage (1).jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo-gallery">
+      <div id="scroll-2" class="photo-gallery-row-container">
+        <div class="photo-gallery-row">
+          <div class="photo-gallery-container-1">
+            <p class="gallery-title">Gallery</p>
+            <h3 class="pgo">Our Photos & Videos</h3>
+            <p class="pgop">Our best moments shared here</p>
+            <div class="vidimg-container">
+              <a
+                ><img
+                  class="play-button2"
+                  src="compressedFloreSailImages/play (1).png"
+              /></a>
+              <a
+                ><img
+                  class="imgvid2"
+                  src="compressedFloreSailImages/pic5 (1).jpg"
+              /></a>
+            </div>
+          </div>
+          <div class="photo-gallery-container-2">
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic6 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
 
-<body>
-  <div class="sticky">
-    <a class="WhatsApp" aria-label="Chat on WhatsApp"
-      href="https://api.whatsapp.com/send?phone=351927916990&text=I%20am%20in%20the%20Floresail%20website%20and%20I%20have%20a%20couple%20inquiries.">
-      <img alt="Chat on WhatsApp" src="compressedFloreSailImages/WhatsApps (1).png"></a>
-  </div>
-  <div class="header-container">
-    <nav id="topbar">
-      <div class="nav-container">
-        <a href="index.html"><img src="compressedFloreSailImages/logo2 (1).png" alt="Floresail Logo" class="logo"></a>
-        <div class="mobile-menu">
-          <ul class="nav-menu">
-            <li><a href="javascript:void(0);" onclick="smoothScroll('scroll-1')">About</a></li>
-            <li><a href="javascript:void(0);" onclick="smoothScroll('scroll-2')">Gallery</a></li>
-            <li><a href="javascript:void(0);" onclick="smoothScroll('scroll-3')">Price</a></li>
-            <li><a href="javascript:void(0);">Services</a></li>
-            <li><a href="javascript:void(0);">Testimonials</a></li>
-            <li><a href="javascript:void(0);" onclick="smoothScroll('scroll-6')">Contact</a></li>
-            <li><a href="tel:+351927916990"><span id="spanNum">+351 </span>927 916 990</a></li>
+              <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic1 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic3 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic4 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic2 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img
+                  src="compressedFloreSailImages/pic5 (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img
+                  src="compressedFloreSailImages/vidimage (1).jpg"
+                  style="width: 100%"
+                />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic1 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(1)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic2 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(2)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic3 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(3)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic4 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(4)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic5 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(5)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/pic6 (1).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(6)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="compressedFloreSailImages/mainimage (2).jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(7)"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cabin-pic-row-container">
+              <div class="cabin-pic-row">
+                <div class="cabin-pic-1">
+                  <img
+                    id="myImg"
+                    class="image-mod-1"
+                    src="compressedFloreSailImages/pic4 (1).jpg"
+                  />
+                </div>
+                <div class="cabin-pic-2">
+                  <img
+                    id="myImg2"
+                    class="image-mod-2"
+                    src="compressedFloreSailImages/pic2 (1).jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pricing1" class="pricing">
+      <div class="pricing-row-container" id="scroll-3">
+        <div class="pricing-row">
+          <div class="pricing-col-container">
+            <div class="pricing-column">
+              <div class="pricing-wrapper">
+                <p class="pricing-title">Pricing</p>
+                <h3 class="ph3">Plans & Options</h3>
+                <p class="pwt">
+                  The plans below are modifiable!<br />contact us for more info.
+                </p>
+              </div>
+              <div class="pricing-cards-row">
+                <!-- Card 1 with different top and bottom colors -->
+                <div class="pricing-card card1">
+                  <div class="card-top">
+                    <div class="card-top-container">
+                      <div class="text-overlay2">
+                        <span class="dsign">€</span>
+                      </div>
+                      <div class="text-overlay">
+                        <h2>80</h2>
+                      </div>
+                      <div class="text-overlay3">
+                        <span class="perperson">/Person</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-bottom-container">
+                      <ul class="cb-ul">
+                        <li class="cb-li">4 Hour Duration</li>
+                        <li class="cb-li">4 Person Max</li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Anchorage in
+                          beautiful bays
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Snacks & Drinks
+                          onboard
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-xmark"></i>Snorkeling & Coastal
+                          Approach
+                        </li>
+                        <li class="cb-last">
+                          <i class="fa-solid fa-xmark"></i>Coastal Cleanup
+                          Discount
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-container">
+                      <div class="slide-container">
+                        <a href="booking.html">
+                          <button class="cb-btn slide123">
+                            <span class="text123">Book A Trip</span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 and Card 3 -->
+                <div class="pricing-card card2">
+                  <div class="card-top">
+                    <div class="card-top-container">
+                      <div class="text-overlay2">
+                        <span class="dsign2">€</span>
+                      </div>
+                      <div class="text-overlay">
+                        <h2>100</h2>
+                      </div>
+                      <div class="text-overlay3">
+                        <span class="perperson">/Person</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-bottom-container">
+                      <ul class="cb-ul">
+                        <li class="cb-li">1 Full Day</li>
+                        <li class="cb-li">4 Person Max</li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Sailing around the
+                          island
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Lunch, Snacks &
+                          drinks
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Snorkeling & Coastal
+                          Approach
+                        </li>
+                        <li class="cb-last">
+                          <i class="fa-solid fa-check"></i>Coastal Cleanup
+                          Discount
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-container">
+                      <div class="slide-container">
+                        <a href="booking.html">
+                          <button class="cb-btn slide123">
+                            <span class="text123">Book A Trip</span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-card card3">
+                  <div class="card-top">
+                    <div class="card-top-container">
+                      <div class="text-overlay2">
+                        <span class="dsign3">€</span>
+                      </div>
+                      <div class="text-overlay">
+                        <h2>130</h2>
+                      </div>
+                      <div class="text-overlay3">
+                        <span class="perperson">/Person</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom">
+                    <div class="card-bottom-container">
+                      <ul class="cb-ul">
+                        <li class="cb-li">1-2 Full Days</li>
+                        <li class="cb-li">4 Person Max</li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Trip To Corvo
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Breakfast, Lunch,
+                          Snacks
+                        </li>
+                        <li class="cb-li">
+                          <i class="fa-solid fa-check"></i>Sailing around the
+                          island
+                        </li>
+                        <li class="cb-last">
+                          <i class="fa-solid fa-xmark"></i>Coastal Cleanup
+                          Discount
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="btn-container">
+                      <div class="slide-container">
+                        <a href="booking.html">
+                          <button class="cb-btn slide123">
+                            <span class="text123">Book A Trip</span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer">
+      <div class="section-row">
+        <div class="footer-row-item"></div>
+        <div class="footer-row-item">
+          <h3 class="row-item-h">Useful Links</h3>
+          <ul class="row-item-ul">
+            <li class="row-item-li">
+              <a href="javascript:void(0);" onclick="smoothScroll('scroll-1')"
+                >About</a
+              >
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);" onclick="smoothScroll('scroll-2')"
+                >Gallery</a
+              >
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);" onclick="smoothScroll('scroll-3')"
+                >Price</a
+              >
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);">Services</a>
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);">Testimonials</a>
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);" onclick="smoothScroll('scroll-6')"
+                >Contact</a
+              >
+            </li>
+            <li class="row-item-li">
+              <a href="javascript:void(0);">Google Business</a>
+            </li>
+            <li class="row-item-li">
+              <a
+                href="https://www.google.com/maps/place/Azores+Sail+ocidental+sailing+Floresail/@39.378737,-31.1702487,15z/data=
+              !4m6!3m5!1s0xb3227556cd861ad:0xc9a222ca8c61f80e!8m2!3d39.378737!4d-31.1702487!16s%2Fg%2F11v0bx_t7y?entry=ttu"
+                target="_blank"
+                >Our Location</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="x-container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
-    </nav>
-    <div class="hero-text-container text-container centered hidden">
-      <p id="smalltxt">WIND, WATER, LIFESTYLE.</p>
-      <h1 id="bigtxt" class="white-text">floresail</h1>
-      <p id="undertxt">Azores, Flores</p>
-      <a href="#pricing1">
-        <div class="yellow-button" id="button">Book A Trip</div>
-      </a>
-    </div>
-    <div id="heroImage" class="fade"></div>
-    <div id="heroImage2" class="fade hidden"></div>
-    <div id="heroImage3" class="fade hidden"></div>
-  </div>
-  <div id="scroll-1" class="about-container">
-    <div class="about-row-container">
-      <div class="about-row">
-        <div class="about-container-1">
-          <p id="about-title" class="about-title">about us</p>
-          <h3 class="wwo">What We Offer</h3>
-          <p class="wwop">We want you to have an awesome <br> and unique sailing experience.</p>
-          <div class="txt-div">
-            <p class="txt-div-p">Explore the breathtaking Western Group of the Azores with our captivating sailing
-              tours!
-              Immerse yourself in the islands' natural beauty and connect with marine life while contributing
-              to environmental preservation. </p>
-            <p>Join us in our mission to protect the environment while indulging in the unmatched beauty
-              of the Azores on a sailing tour you'll cherish forever.</p>
-          </div>
-          <div class="btn-wrap">
-            <div class="slide-container btn-change">
-              <a href="booking.html">
-                <button class="book-btn slide123">
-                  <span class="text123">Book A Trip</span>
-                </button>
-              </a>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="about-container-2">
-          <div class="imgcontainer">
-            <a><img class="play-button" src="compressedFloreSailImages/play (1).png"></a>
-            <a><img class="imgvid" src="compressedFloreSailImages/vidimage (1).jpg"></a>
+        <div class="footer-row-item">
+          <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Ask us questions"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <div class="btn-container2">
+                  <div class="slide-container">
+                    <button class="cb-btn2 slide1234">
+                      <span class="text1234">Send Message</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="photo-gallery">
-    <div id="scroll-2" class="photo-gallery-row-container">
-      <div class="photo-gallery-row">
-        <div class="photo-gallery-container-1">
-          <p class="gallery-title">Gallery</p>
-          <h3 class="pgo">Our Photos & Videos</h3>
-          <p class="pgop">Our best moments shared here</p>
-          <div class="vidimg-container">
-            <a><img class="play-button2" src="compressedFloreSailImages/play (1).png"></a>
-            <a><img class="imgvid2" src="compressedFloreSailImages/pic5 (1).jpg"></a>
-          </div>
-        </div>
-        <div class="photo-gallery-container-2">
-          <div class="container">
-            <div class="mySlides">
-              <div class="numbertext">1 / 7</div>
-              <img src="compressedFloreSailImages/pic6 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">2 / 7</div>
-              <img src="compressedFloreSailImages/pic1 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">3 / 7</div>
-              <img src="compressedFloreSailImages/pic3 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">4 / 7</div>
-              <img src="compressedFloreSailImages/pic4 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">5 / 7</div>
-              <img src="compressedFloreSailImages/pic2 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">6 / 7</div>
-              <img src="compressedFloreSailImages/pic5 (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">7 / 7</div>
-              <img src="compressedFloreSailImages/vidimage (1).jpg" style="width:100%">
-            </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic1 (1).jpg" style="width:100%"
-                  onclick="currentSlide(1)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic2 (1).jpg" style="width:100%"
-                  onclick="currentSlide(2)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic3 (1).jpg" style="width:100%"
-                  onclick="currentSlide(3)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic4 (1).jpg" style="width:100%"
-                  onclick="currentSlide(4)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic5 (1).jpg" style="width:100%"
-                  onclick="currentSlide(5)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/pic6 (1).jpg" style="width:100%"
-                  onclick="currentSlide(6)">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="compressedFloreSailImages/mainimage (2).jpg" style="width:100%"
-                  onclick="currentSlide(7)">
-              </div>
-            </div>
-          </div>
-          <div class="cabin-pic-row-container">
-            <div class="cabin-pic-row">
-              <div class="cabin-pic-1">
-                <img id="myImg" class="image-mod-1" src="compressedFloreSailImages/pic4 (1).jpg">
-              </div>
-              <div class="cabin-pic-2">
-                <img id="myImg2" class="image-mod-2" src="compressedFloreSailImages/pic2 (1).jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="scroll-6" class="footer">
+      <p>
+        © <span id="allRightsReserved"></span> Web Development By
+        <a href="index.html"><span>Noam Graf</span></a
+        >. All Rights Reserved By <a href="index.html"><span>floresail</span></a
+        >.
+      </p>
     </div>
-  </div>
-  <div id="pricing1" class="pricing">
-    <div class="pricing-row-container" id="scroll-3">
-      <div class="pricing-row">
-        <div class="pricing-col-container">
-          <div class="pricing-column">
-            <div class="pricing-wrapper">
-              <p class="pricing-title">Pricing</p>
-              <h3 class="ph3">Plans & Options</h3>
-              <p class="pwt">The plans below are modifiable!<br>contact us for more info.</p>
-            </div>
-            <div class="pricing-cards-row">
-              <!-- Card 1 with different top and bottom colors -->
-              <div class="pricing-card card1">
-                <div class="card-top">
-                  <div class="card-top-container">
-                    <div class="text-overlay2">
-                      <span class="dsign">€</span>
-                    </div>
-                    <div class="text-overlay">
-                      <h2>80</h2>
-                    </div>
-                    <div class="text-overlay3">
-                      <span class="perperson">/Person</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-bottom">
-                  <div class="card-bottom-container">
-                    <ul class="cb-ul">
-                      <li class="cb-li">4 Hour Duration</li>
-                      <li class="cb-li">4 Person Max</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Anchorage in beautiful bays</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Snacks & Drinks onboard</li>
-                      <li class="cb-li"><i class="fa-solid fa-xmark"></i>Snorkeling & Coastal Approach</li>
-                      <li class="cb-last"><i class="fa-solid fa-xmark"></i>Coastal Cleanup Discount</li>
-                    </ul>
-                  </div>
-                  <div class="btn-container">
-                    <div class="slide-container">
-                      <a href="booking.html">
-                        <button class="cb-btn slide123">
-                          <span class="text123">Book A Trip</span>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 2 and Card 3 -->
-              <div class="pricing-card card2">
-                <div class="card-top">
-                  <div class="card-top-container">
-                    <div class="text-overlay2">
-                      <span class="dsign2">€</span>
-                    </div>
-                    <div class="text-overlay">
-                      <h2>100</h2>
-                    </div>
-                    <div class="text-overlay3">
-                      <span class="perperson">/Person</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-bottom">
-                  <div class="card-bottom-container">
-                    <ul class="cb-ul">
-                      <li class="cb-li">1 Full Day</li>
-                      <li class="cb-li">4 Person Max</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Sailing around the island</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Lunch, Snacks & drinks</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Snorkeling & Coastal Approach</li>
-                      <li class="cb-last"><i class="fa-solid fa-check"></i>Coastal Cleanup Discount</li>
-                    </ul>
-                  </div>
-                  <div class="btn-container">
-                    <div class="slide-container">
-                      <a href="booking.html">
-                        <button class="cb-btn slide123">
-                          <span class="text123">Book A Trip</span>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="pricing-card card3">
-                <div class="card-top">
-                  <div class="card-top-container">
-                    <div class="text-overlay2">
-                      <span class="dsign3">€</span>
-                    </div>
-                    <div class="text-overlay">
-                      <h2>130</h2>
-                    </div>
-                    <div class="text-overlay3">
-                      <span class="perperson">/Person</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-bottom">
-                  <div class="card-bottom-container">
-                    <ul class="cb-ul">
-                      <li class="cb-li">1-2 Full Days</li>
-                      <li class="cb-li">4 Person Max</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Trip To Corvo</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Breakfast, Lunch, Snacks</li>
-                      <li class="cb-li"><i class="fa-solid fa-check"></i>Sailing around the island</li>
-                      <li class="cb-last"><i class="fa-solid fa-xmark"></i>Coastal Cleanup Discount</li>
-                    </ul>
-                  </div>
-                  <div class="btn-container">
-                    <div class="slide-container">
-                      <a href="booking.html">
-                        <button class="cb-btn slide123">
-                          <span class="text123">Book A Trip</span>
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="videoModal" class="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <iframe
+        src="https://www.youtube.com/embed/lO1T_RF8Njs?si=PbJOIOc--wj0RDcV"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
-  </div>
-  <div class="section-footer">
-    <div class="section-row">
-      <div class="footer-row-item"></div>
-      <div class="footer-row-item">
-        <h3 class="row-item-h">Useful Links</h3>
-        <ul class="row-item-ul">
-          <li class="row-item-li">
-            <a href="javascript:void(0);" onclick="smoothScroll('scroll-1')">About</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);" onclick="smoothScroll('scroll-2')">Gallery</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);" onclick="smoothScroll('scroll-3')">Price</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);">Services</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);">Testimonials</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);" onclick="smoothScroll('scroll-6')">Contact</a>
-          </li>
-          <li class="row-item-li">
-            <a href="javascript:void(0);">Google Business</a>
-          </li>
-          <li class="row-item-li">
-            <a href="https://www.google.com/maps/place/Azores+Sail+ocidental+sailing+Floresail/@39.378737,-31.1702487,15z/data=
-              !4m6!3m5!1s0xb3227556cd861ad:0xc9a222ca8c61f80e!8m2!3d39.378737!4d-31.1702487!16s%2Fg%2F11v0bx_t7y?entry=ttu"
-              target="_blank">Our Location</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-row-item">
-        <div class="contact-form">
-          <h2>Contact Us</h2>
-          <form action="#" method="post">
-            <div class="form-group">
-              <input type="email" id="email" name="email" required placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" required placeholder="Ask us questions"></textarea>
-            </div>
-            <div class="form-group">
-              <div class="btn-container2">
-                <div class="slide-container">
-                  <button class="cb-btn2 slide1234">
-                    <span class="text1234">Send Message</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div id="myModal" class="modal123">
+      <span class="close123">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
     </div>
-  </div>
-  <div id="scroll-6" class="footer">
-    <p>© <span id="allRightsReserved"></span> Web Development By <a href="index.html"><span>Noam Graf</span></a>. All
-      Rights Reserved By <a href="index.html"><span>floresail</span></a>.</p>
-  </div>
-  <div id="videoModal" class="modal">
-    <span class="close" id="closeModal">&times;</span>
-    <iframe src="https://www.youtube.com/embed/lO1T_RF8Njs?si=PbJOIOc--wj0RDcV" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div id="myModal" class="modal123">
-    <span class="close123">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-  <script src="script.js"></script>
-  <script>
-    function getTheYear() {
-      const getDate = new Date();
-      let currentYear = getDate.getFullYear();
-      let yearText = document.getElementById("allRightsReserved");
-      yearText.innerHTML += currentYear;
-    }
 
-    window.onload = getTheYear;
-  </script>
-</body>
+    <div id=""></div>
 
+    <script src="script.js"></script>
+    <script>
+      function getTheYear() {
+        const getDate = new Date();
+        let currentYear = getDate.getFullYear();
+        let yearText = document.getElementById("allRightsReserved");
+        yearText.innerHTML += currentYear;
+      }
+
+      window.onload = getTheYear;
+    </script>
+  </body>
 </html>
