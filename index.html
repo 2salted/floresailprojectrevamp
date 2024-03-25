@@ -339,7 +339,6 @@
                 </p>
               </div>
               <div class="pricing-cards-row">
-                <!-- Card 1 with different top and bottom colors -->
                 <div class="pricing-card card1">
                   <div class="card-top">
                     <div class="card-top-container">
@@ -600,7 +599,32 @@
 
     <div id="submissionModal">
       <div id="subModalContent">
-        <div class="modalFlex"></div>
+        <div class="modalFlex">
+          <div class="closeDiv">
+            <span class="close321">&times;</span>
+          </div>
+          <h1>Book your sailing trip</h1>
+          <form class="modalFlex" action="#" method="post">
+            <input class="textInput1" type="text" placeholder="Full Name" />
+            <input class="textInput2" type="email" placeholder="Email" />
+            <input class="textInput3" type="tel" placeholder="Phone Number" />
+            <input class="textInput4" type="date" placeholder="Date" />
+            <select class="selectInput">
+              <option disabled selected>Select your plan...</option>
+              <option>Sunset Plan (4 Hours)</option>
+              <option>Full Day Plan (1 Full Day)</option>
+              <option>Flores & Corvo Plan (1-2 Full Days)</option>
+            </select>
+            <select class="selectInput">
+              <option disabled selected>Select number of people...</option>
+              <option>1 person</option>
+              <option>2 persons</option>
+              <option>3 persons</option>
+              <option>4 persons</option>
+            </select>
+            <button type="submit" id="submissionFormBtn">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
 

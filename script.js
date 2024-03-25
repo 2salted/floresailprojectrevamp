@@ -210,3 +210,10 @@ window.onclick = function (event) {
     formModal.style.display = "none";
   }
 };
+
+let closeButton = document.getElementsByClassName("close321")[0];
+
+// When the user clicks on the close button, close the modal
+closeButton.onclick = function () {
+  formModal.style.display = "none";
+};

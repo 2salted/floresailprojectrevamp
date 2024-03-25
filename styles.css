@@ -35,23 +35,89 @@ body {
 #subModalContent {
   background-color: #fefefe; /* White background */
   padding: 20px; /* Padding */
+  padding-left: 60px;
+  padding-bottom: 40px;
+  padding-right: 60px;
   border: 1px solid #888; /* Border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners */
   max-width: 80%; /* Maximum width */
-  max-height: 80%; /* Maximum height */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.closeDiv {
+ display: flex;
+ justify-content: end;
+}
+
+.close321 {
+    color: #aaa; /* Grey color */
+    float: right; /* Float right */
+    font-size: 40px; /* Font size */
+    font-weight: bold; /* Bold text */
+  }
+
+  /* Close button on hover */
+  .close321:hover,
+  .close321:focus {
+    color: black; /* Black color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Cursor pointer */
+  }
+.textInput1, .textInput2, .textInput3, .textInput4, .selectInput {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 30px;
+  outline: none;
+  color: #134b69;
+  border: 2px solid #74abc9;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.modalFlex input::placeholder {
+  color: #0d3b54a6;
+}
+
+.modalFlex h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  letter-spacing: 1.5px;
+  padding-bottom: 25px;
+  color:#0d3b54;
+  padding-top: 5px;
 }
 
 .modalFlex {
   display: flex;
+  flex-direction: column;
 }
+
+#submissionFormBtn{
+  background-color: #10415b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
 
 .header-container {
   height: 100svh;
 }
+
 .x-container {
   display: none;
 }
+
 #heroImage {
   background-image: url(compressedFloreSailImages/mainimage\ \(2\).jpg);
   height: 100svh;
@@ -69,6 +135,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #heroImage3 {
   background-image: url(compressedFloreSailImages/IMG_4748\ \(1\).jpg);
   height: 100vh;
@@ -77,6 +144,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #topbar {
   background-color: rgba(10, 51, 73, 0.4);
   padding: 10px 0;
@@ -500,7 +568,6 @@ body.modal-open {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 15px;
   margin-top: -40px;
   color: #fdd123;
