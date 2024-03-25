@@ -20,26 +20,30 @@ body {
 }
 
 #submissionModal {
-    position: fixed; /* Position the modal */
-    z-index: 9999; /* Ensure it's above everything */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    overflow: auto; /* Enable scrolling if the content is too tall */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+  position: fixed; /* Position the modal */
+  z-index: 9999; /* Ensure it's above everything */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  overflow: auto; /* Enable scrolling if the content is too tall */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 #subModalContent {
-background-color: #fefefe; /* White background */
-    padding: 20px; /* Padding */
-    border: 1px solid #888; /* Border */
-    border-radius: 5px; /* Rounded corners */
-    max-width: 80%; /* Maximum width */
-    max-height: 80%; /* Maximum height */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  background-color: #fefefe; /* White background */
+  padding: 20px; /* Padding */
+  border: 1px solid #888; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  max-width: 80%; /* Maximum width */
+  max-height: 80%; /* Maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.modalFlex {
+  display: flex;
 }
 
 .header-container {

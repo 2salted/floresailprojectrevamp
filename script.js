@@ -121,7 +121,6 @@ document
   .querySelector(".about-container-2")
   .addEventListener("click", openModal);
 
-// JavaScript code
 function smoothScroll(targetId) {
   const targetElement = document.getElementById(targetId);
 
@@ -205,3 +204,9 @@ formModal.style.display = "none";
 function submissionModal() {
   formModal.style.display = "flex";
 }
+
+window.onclick = function (event) {
+  if (event.target == formModal) {
+    formModal.style.display = "none";
+  }
+};
