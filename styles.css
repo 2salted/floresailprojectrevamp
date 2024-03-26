@@ -1135,6 +1135,7 @@ div .WhatsApp img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -1143,6 +1144,7 @@ div .WhatsApp img {
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 25px;
+  text-align:center;
 }
 .row-item-ul {
   list-style: none;
@@ -1283,6 +1285,12 @@ div .WhatsApp img {
 .slide1234:hover::before {
   transform: translate(-110%, 0) skew(-30deg);
 }
+
+.first-row-item {
+  margin: 0px 60px;
+  padding: 0px 15px
+}
+
 @media (min-width: 1400px) {
   .section-row {
     max-width: 1320px;
