@@ -121,7 +121,7 @@ body {
 #heroImage {
   background-image: url(compressedFloreSailImages/mainimage\ \(2\).jpg);
   height: 100svh;
-  width: 100vw;
+  width: 100%;
   background-position: 0px 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,6 @@ body {
 #heroImage2 {
   background-image: url();
   height: 100svh;
-  width: 100vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +138,6 @@ body {
 #heroImage3 {
   background-image: url(compressedFloreSailImages/IMG_4748\ \(1\).jpg);
   height: 100vh;
-  width: 100vw;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
