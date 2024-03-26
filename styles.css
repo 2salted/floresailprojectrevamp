@@ -40,8 +40,16 @@ body {
   padding-right: 60px;
   border: 1px solid #888; /* Border */
   border-radius: 30px; /* Rounded corners */
-  max-width: 80%; /* Maximum width */
+  width: 60%; /* Maximum width */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+@media (max-width: 660px) {
+  #subModalContent {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
 }
 
 .closeDiv {
@@ -71,7 +79,6 @@ body {
   color: #134b69;
   border: 2px solid #74abc9;
   border-radius: 10px;
-  width: 600px;
 }
 
 .modalFlex input::placeholder {

@@ -124,6 +124,14 @@
   justify-content: space-evenly !important
 }
 
+.tw-p-5 {
+  padding: 1.25rem !important
+}
+
+.tw-p-0 {
+  padding: 0px !important
+}
+
 .tw-px-5 {
   padding-left: 1.25rem !important;
   padding-right: 1.25rem !important
@@ -133,9 +141,18 @@
   padding-top: 7rem !important
 }
 
+.tw-text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important
+}
+
 @media (min-width: 768px) {
   .md\:tw-flex-row {
     flex-direction: row !important
+  }
+
+  .md\:tw-p-0 {
+    padding: 0px !important
   }
 
   .md\:tw-pt-0 {
