@@ -139,11 +139,10 @@
             </div>
             <div class="btn-wrap">
               <div class="slide-container btn-change">
-                <a href="booking.html">
-                  <button class="book-btn slide123">
-                    <span class="text123">Book A Trip</span>
-                  </button>
-                </a>
+                <button class="book-btn slide123"
+                  onclick="submissionModal()">
+                  <span class="text123">Book A Trip</span>
+                </button>
               </div>
             </div>
           </div>
@@ -378,16 +377,15 @@
                     </div>
                     <div class="btn-container">
                       <div class="slide-container">
-                        <a href="booking.html">
-                          <button class="cb-btn slide123">
-                            <span class="text123">Book A Trip</span>
-                          </button>
-                        </a>
+                        <button class="cb-btn slide123"
+                          onclick="submissionModal()"
+                        >
+                          <span class="text123">Book A Trip</span>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Card 2 and Card 3 -->
                 <div class="pricing-card card2">
                   <div class="card-top">
                     <div class="card-top-container">
@@ -427,11 +425,11 @@
                     </div>
                     <div class="btn-container">
                       <div class="slide-container">
-                        <a href="booking.html">
-                          <button class="cb-btn slide123">
-                            <span class="text123">Book A Trip</span>
-                          </button>
-                        </a>
+                        <button class="cb-btn slide123"
+                          onclick="submissionModal()"
+                        >
+                          <span class="text123">Book A Trip</span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -538,7 +536,10 @@
         <div class="footer-row-item">
           <div class="contact-form">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
+            <form
+              action="https://formsubmit.co/noamgraf123@gmail.com"
+              method="POST"
+            >
               <div class="form-group">
                 <input
                   type="email"
@@ -597,7 +598,6 @@
       <img class="modal-content" id="img01" />
       <div id="caption"></div>
     </div>
-
     <div id="submissionModal">
       <div id="subModalContent">
         <div class="modalFlex">
