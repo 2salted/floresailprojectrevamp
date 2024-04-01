@@ -4,12 +4,12 @@ var image3 = document.getElementById("heroImage3");
 var bigtxt = document.getElementById("bigtxt");
 var currentImage = 1;
 
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function() {
   // Find the .text-container element
   const textContainer = document.querySelector(".text-container");
 
   // After 2 seconds, remove the 'hidden' class to make it visible
-  setTimeout(function () {
+  setTimeout(function() {
     textContainer.classList.remove("hidden");
   }, 1000); // 1000 milliseconds = 1 second
 });
@@ -62,24 +62,24 @@ function closeMobileMenu() {
 
 // Add this code to close the mobile menu when a menu item is clicked
 var mobileMenuItems = document.querySelectorAll(".mobile-menu a");
-mobileMenuItems.forEach(function (item) {
+mobileMenuItems.forEach(function(item) {
   item.addEventListener("click", closeMobileMenu);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(function () {
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
     document.querySelector(".text-container").style.color = "#0d3b54";
 
     document
       .querySelectorAll("#smalltxt, #bigtxt, #undertxt")
-      .forEach(function (element, index) {
-        setTimeout(function () {
+      .forEach(function(element, index) {
+        setTimeout(function() {
           element.style.opacity = "1";
           element.style.transform = "translateX(0)";
         }, index * 200);
       });
 
-    setTimeout(function () {
+    setTimeout(function() {
       document.querySelector("#button").style.opacity = "1";
       document.querySelector("#button").style.transform = "translateY(0)";
     }, 1000);
@@ -95,12 +95,12 @@ function openModal() {
   document.body.classList.add("modal-open");
 
   // Event listener for clicking the close button
-  document.getElementById("closeModal").addEventListener("click", function () {
+  document.getElementById("closeModal").addEventListener("click", function() {
     closeModal();
   });
 
   // Event listener for closing the modal when clicking outside the modal
-  window.addEventListener("click", function (event) {
+  window.addEventListener("click", function(event) {
     if (event.target === modal) {
       closeModal();
     }
@@ -174,38 +174,41 @@ var span123 = document.getElementsByClassName("close123")[0];
 var img2 = document.getElementById("myImg2");
 
 // Open the modal when the image is clicked
-img.onclick = function () {
+img.onclick = function() {
   modal123.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
 
-img2.onclick = function () {
+img2.onclick = function() {
   modal123.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
 
 // Close the modal when the close button is clicked
-span123.onclick = function () {
+span123.onclick = function() {
   modal123.style.display = "none";
 };
 
 // Close the modal when you click anywhere outside of it
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == modal123) {
     modal123.style.display = "none";
   }
 };
 
 let formModal = document.getElementById("submissionModal");
-formModal.style.display = "none";
+let subFormContent = document.getElementById("subModalContent")
+// formModal.style.display = "none";
 
 function submissionModal() {
   formModal.style.display = "flex";
+  subFormContent.style.display = "flex";
+  subFormContent.style.flexDirection = "column";
 }
 
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == formModal) {
     formModal.style.display = "none";
   }
@@ -214,6 +217,6 @@ window.onclick = function (event) {
 let closeButton = document.getElementsByClassName("close321")[0];
 
 // When the user clicks on the close button, close the modal
-closeButton.onclick = function () {
+closeButton.onclick = function() {
   formModal.style.display = "none";
 };

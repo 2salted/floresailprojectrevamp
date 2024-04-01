@@ -20,6 +20,7 @@ body {
 }
 
 #submissionModal {
+  display: none;
   position: fixed; /* Position the modal */
   z-index: 9999; /* Ensure it's above everything */
   left: 0;
@@ -33,6 +34,7 @@ body {
 }
 
 #subModalContent {
+  display: none;
   background-color: #fefefe; /* White background */
   padding: 20px; /* Padding */
   padding-left: 60px;
